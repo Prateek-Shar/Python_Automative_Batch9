@@ -4,5 +4,17 @@ from email_validator  import validate_gmail
 email = input("Enter the email : ")
 contact = (input("Enter the number : "))
 
-print(validate_number(contact))
-print(validate_gmail(email))
+#Calling Email Validator Function
+if validate_number(contact):
+   print("The number is valid")
+
+else:
+   print("Number is not valid")
+
+
+#Calling Number Validator Function
+if validate_gmail(email):
+   print("Email is valid")
+
+else: 
+   print("Email not valid")
